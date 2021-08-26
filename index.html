@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CookFlix - Seu catálogo de receitas</title>
+    <link
+      rel="shortcut icon"
+      href="https://fontmeme.com/permalink/210820/90210d8f8f144dc7da5651d29bb4e4cd.png"
+    />
+
+    <!-- ICONS -->
+    <link rel="stylesheet" href="assets/fonts/style.css" />
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header id="header">
+      <nav class="container">
+        <a class="logo" href="#">
+          <img
+            src="https://fontmeme.com/permalink/210820/9fcda701c4565599fc58066705b16f96.png"
+            alt="CookFlix logo"
+          />
+        </a>
+        <!-- MENU -->
+        <div class="menu">
+          <ul class="grid">
+            <li><a href="#inicio" class="title"></a>Início</li>
+            <li><a href="#tecnicas" class="title"></a>Técnicas</li>
+            <li><a href="#nacionalidades" class="title"></a>Nacionalidades</li>
+            <li><a href="#contato" class="title"></a>Contato</li>
+          </ul>
+        </div>
+        <!-- /menu -->
+        <div class="toggle icon-menu"></div>
+        <div class="toggle icon-close"></div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- INICIO -->
+      <section class="section" id="home">
+        <div class="video">
+          <video autoplay muted loop id="myVideo">
+            <source src="/assets/bg-video.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="text">
+          <h2 class="title">Seu catálogo de receitas</h2>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.<br />
+            Rem quod ipsam similique soluta, facere cum corporis, maiores nobis
+            officiis veniam architecto.
+          </p>
+        </div>
+      </section>
+
+      <!-- TECNICAS -->
+      <section class="section" id="tecnicas">
+        <div class="container grid">
+          <header>
+            <h2 class="title">Técnicas</h2>
+          </header>
+          <div class="cards grid">
+            <div class="card">
+              <img id="cortes" src="/assets/cortes.jpg" alt="" />
+              <label for="cortes">Cortes</label>
+            </div>
+            <div class="card">
+              <img id="cocção" src="/assets/cocção.jpg" alt="" />
+              <label for="cocção">Cocção</label>
+            </div>
+            <div class="card">
+              <img id="conservação" src="/assets/conservação.jpg" alt="" />
+              <label for="conservação">Conservação</label>
+            </div>
+            <div class="card">
+              <img id="molhos" src="/assets/molhos.jpg" alt="" />
+              <label for="molhos">Molhos</label>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- NACIONALIDADE -->
+      <section class="section" id="nacionalidade">
+        <div class="container grid">
+          <header>
+            <h2 class="title">Nacionalidades</h2>
+          </header>
+          <div class="cards grid">
+            <div class="card">
+              <img id="frança" src="/assets/frança.jpg" alt="" />
+              <label for="frança">França</label>
+            </div>
+            <div class="card">
+              <img id="italia" src="/assets/italia.jpg" alt="" />
+              <label for="italia">Itália</label>
+            </div>
+            <div class="card">
+              <img id="brasil" src="/assets/brasil.jpg" alt="" />
+              <label for="brasil">Brasil</label>
+            </div>
+            <div class="card">
+              <img id="japao" src="/assets/japao.jpg" alt="" />
+              <label for="japao">Japão</label>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="section">
+      <div class="container grid">
+        <a class="logo" href="#">
+          <img
+            src="https://fontmeme.com/permalink/210820/9fcda701c4565599fc58066705b16f96.png"
+            alt="CookFlix logo"
+          />
+        </a>
+
+        <div class="direitos">
+          <p>©2021 CookFlix</p>
+          <p>Todos os direitos reservados.</p>
+        </div>
+      </div>
+    </footer>
+    <!-- main.js -->
+    <script src="main.js"></script>
+  </body>
+</html>
