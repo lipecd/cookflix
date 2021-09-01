@@ -221,17 +221,26 @@ nav.show div.icon-close {
   overflow: hidden;
 }
 
-#myVideo {
+.gradient {
+  background-image: linear-gradient(
+    0deg,
+    black,
+    rgba(0, 0, 0, 0.432) 80%,
+    transparent
+  );
   width: 100%;
-  height: 100%;
+  height: 80vh;
   object-fit: cover;
-  border-radius: 0.25rem;
+  position: relative;
+  z-index: 2;
 }
 
-.video {
-  position: relative;
-  top: 0;
-  left: 0;
+#myVideo {
+  width: 100%;
+  height: 80vh;
+  object-fit: cover;
+  border-radius: 0.25rem;
+  z-index: -1;
 }
 
 .text {
