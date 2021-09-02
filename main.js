@@ -16,3 +16,76 @@ for (const link of links) {
     nav.classList.remove('show')
   })
 }
+
+// SHOW/HIDE VIDEOS
+function showCortes() {
+  var x = document.getElementById('cortesVideos')
+  if (x.style.display === 'none') {
+    x.style.display = 'block'
+  } else {
+    x.style.display = 'none'
+  }
+}
+
+function showCocçao() {
+  var x = document.getElementById('cocçaoVideos')
+  if (x.style.display === 'none') {
+    x.style.display = 'block'
+  } else {
+    x.style.display = 'none'
+  }
+}
+
+function showConservaçao() {
+  var x = document.getElementById('conservaçaoVideos')
+  if (x.style.display === 'none') {
+    x.style.display = 'block'
+  } else {
+    x.style.display = 'none'
+  }
+}
+
+function showMolhos() {
+  var x = document.getElementById('molhosVideos')
+  if (x.style.display === 'none') {
+    x.style.display = 'block'
+  } else {
+    x.style.display = 'none'
+  }
+}
+
+function showFrança() {
+  var x = document.getElementById('françaVideos')
+  if (x.style.display === 'none') {
+    x.style.display = 'block'
+  } else {
+    x.style.display = 'none'
+  }
+}
+
+function showItalia() {
+  var x = document.getElementById('italiaVideos')
+  if (x.style.display === 'none') {
+    x.style.display = 'block'
+  } else {
+    x.style.display = 'none'
+  }
+}
+
+function showBrasil() {
+  var x = document.getElementById('brasilVideos')
+  if (x.style.display === 'none') {
+    x.style.display = 'block'
+  } else {
+    x.style.display = 'none'
+  }
+}
+
+function showJapao() {
+  var x = document.getElementById('japaoVideos')
+  if (x.style.display === 'none') {
+    x.style.display = 'block'
+  } else {
+    x.style.display = 'none'
+  }
+}

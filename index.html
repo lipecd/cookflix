@@ -43,10 +43,11 @@
     <main>
       <!-- INICIO -->
       <section class="section" id="inicio">
-        <div class="gradient"></div>
-        <video autoplay muted loop id="myVideo">
-          <source src="/assets/bg-video.mp4" type="video/mp4" />
-        </video>
+        <div id="videoGradient">
+          <video autoplay muted loop id="myVideo">
+            <source src="/assets/bg-video.mp4" type="video/mp4" />
+          </video>
+        </div>
         <div class="text">
           <h2 class="title">Seu catálogo de receitas</h2>
           <p>
@@ -64,23 +65,144 @@
             <h2 class="title">Técnicas</h2>
           </header>
           <div class="cards grid">
-            <div class="card">
+            <div class="card" onclick="showCortes()">
               <img id="cortes" src="/assets/cortes.jpg" alt="" />
               <label for="cortes">Cortes</label>
             </div>
-            <div class="card">
+
+            <div class="card" onclick="showCocçao()">
               <img id="cocção" src="/assets/cocção.jpg" alt="" />
               <label for="cocção">Cocção</label>
             </div>
-            <div class="card">
+
+            <div class="card" onclick="showConservaçao()">
               <img id="conservação" src="/assets/conservação.jpg" alt="" />
               <label for="conservação">Conservação</label>
             </div>
-            <div class="card">
+
+            <div class="card" onclick="showMolhos()">
               <img id="molhos" src="/assets/molhos.jpg" alt="" />
               <label for="molhos">Molhos</label>
             </div>
           </div>
+        </div>
+
+        <!-- HIDDEN VIDEOS -->
+        <div class="videos" id="cortesVideos">
+          <iframe class="videoCard"
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/5TJE2XpfMKM"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+          <iframe class="videoCard"
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/FAmhjb5QOTE"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+          <iframe class="videoCard"
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/cqTXS-9CWT0"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="videos" id="cocçaoVideos">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/gLisOouUYsY"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/xdsYqHyrq1A"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/qO-aIajiRp4"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="videos" id="conservaçaoVideos">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/6ktig6NOk6o"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/U4lpKyD5Skw"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/Yu-mmoaZot4"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="videos" id="molhosVideos">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/wllf-xNSeHk"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/_Z3SF6R9i4Q"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/lSr2fEMiAGU"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
         </div>
       </section>
 
@@ -91,24 +213,47 @@
             <h2 class="title">Nacionalidades</h2>
           </header>
           <div class="cards grid">
-            <div class="card">
+            <div class="card" onclick="showFrança()">
               <img id="frança" src="/assets/frança.jpg" alt="" />
               <label for="frança">França</label>
             </div>
-            <div class="card">
+            <div class="card" onclick="showItalia()">
               <img id="italia" src="/assets/italia.jpg" alt="" />
               <label for="italia">Itália</label>
             </div>
-            <div class="card">
+            <div class="card" onclick="showBrasil()">
               <img id="brasil" src="/assets/brasil.jpg" alt="" />
               <label for="brasil">Brasil</label>
             </div>
-            <div class="card">
+            <div class="card" onclick="showJapao()">
               <img id="japao" src="/assets/japao.jpg" alt="" />
               <label for="japao">Japão</label>
             </div>
           </div>
         </div>
+
+        <!-- HIDDEN VIDEOS -->
+        <div class="videos" id="françaVideos">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/voy0PkmO3_k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/s4CcSPbLto8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/UyTGSoGpRK4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="videos" id="italiaVideos">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/pgh38V5EAm4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/GYSjdp_kfLs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/fctrES1Ufew" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="videos" id="brasilVideos">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/fPNOrAl4cP0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/GWmXh0g9uM0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/EfrN6sB7_3k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="videos" id="japaoVideos">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/RjNvdSPmlvo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/OAf1aWAR5HQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/XyRq3cRRjOM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </section>
       </section>
     </main>
 
