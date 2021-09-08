@@ -124,6 +124,12 @@ nav {
   width: 100%;
 }
 
+.navButtons {
+  color: white;
+  font-size: 1rem;
+  font-family: 'Netflix Sans', sans-serif;
+}
+
 nav ul li {
   text-align: center;
   line-height: var(--header-height);
@@ -143,11 +149,11 @@ nav ul li a::after {
   content: '';
   width: 0%;
   height: 2px;
-  background: #141414;
+  background: red;
 
   position: absolute;
   left: 0;
-  bottom: -1.5rem;
+  bottom: -.5rem;
 
   transition: width 0.2s;
 }
@@ -218,8 +224,9 @@ nav.show div.icon-close {
 
 /* INÍCIO ***************************************************/
 #inicio {
-  overflow: hidden;
+  /* overflow: hidden; */
   height: 80vh;
+  position: relative;
 }
 
 #myVideo {
@@ -231,10 +238,14 @@ nav.show div.icon-close {
 }
 
 .text {
-  position: relative;
-  bottom: 7.1rem;
-  background: rgba(0, 0, 0, 0.5);
-  border-radius: 0 0.25rem;
+  width: 30vw;
+  position: absolute;
+  top: 15rem;
+  left: 4rem;
+  background: rgba(0, 0, 0, 0.719);
+  border-radius: 0.25rem;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  padding: 2rem;
 }
 
 /* CARDS ***************************************************/
@@ -342,13 +353,13 @@ footer {
     gap: 2rem;
   }
 
-  nav .menu ul li a.title {
+  nav .menu ul li a.navButtons {
     font-family: 'Netflix Sans', sans-serif;
     font-size: 400;
     -webkit-font-smoothing: antialiased;
   }
 
-  nav .menu ul li a.title.active {
+  nav .menu ul li a.navButtons.active {
     font-weight: bolder;
     -webkit-font-smoothing: auto;
   }
